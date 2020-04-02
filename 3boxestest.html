@@ -1,18 +1,30 @@
 
 <style>
 #box-container {
-  width: 700px;
-  height: 1000px;
+  width: 1000px;
+  height: 700px;
   background-color: #000000;
   display: flex;
   position: fixed;
+
 }
+    h1 {
+        font-size: 50px;
+        position: fixed;
+        left: 30px;
+        
+        color: #ffffff;
+        font-family: sans-serif;
+        bottom: 30px;
+    }
 
 .box {
-    width: 33%;
-    height: 23%;
+    width: 16%;
+    height: 20%;
     border-radius:50%;
-    
+    animation-iteration-count: infinite;  
+    animation-direction: normal;
+    position: relative;
 
 }
 
@@ -20,10 +32,8 @@
     background-color: #FF0000;  
     animation-duration: 1s;
     animation-name: bounce;
-    animation-iteration-count: infinite;  
     animation-timing-function: linear;
-    animation-direction: normal;
-    position: relative;
+    
     
 
 }
@@ -43,13 +53,10 @@
   }
 
 #box-2 {
-    background-color: #00FF00;
+    background-color: #FFA500;
         animation-duration: 2.5s;
     animation-name: bounce2;
-    animation-iteration-count: infinite;  
     animation-timing-function: linear;
-    animation-direction: normal;
-    position: relative;
 }
 
      @keyframes bounce2 {
@@ -67,13 +74,10 @@
     
 
 #box-3 {
-  background-color: #0000FF;
+  background-color: #FFFF00;
     animation-duration: 0.75s;
     animation-name: bounce3;
-    animation-iteration-count: infinite;  
     animation-timing-function: cubic-bezier(0,0.25,1,1.25);
-    animation-direction: normal;
-    position: relative;
  
     
 
@@ -92,14 +96,116 @@
   }
     
 
+    #box-4 {
+  background-color: #00FF00;
+    animation-duration: 3s;
+    animation-name: bounce4;
+    animation-timing-function: cubic-bezier(0,0.25,1,2);
+ 
+    
+
+}
+
+     @keyframes bounce4 {
+    0%, 100%{
+        top:0%;
+    }
+    25%, 75% {
+        top: 25%;
+    }
+    75%{
+        top:50%;
+    }
+  }
+
+
+ #box-5 {
+  background-color: #0000FF;
+    animation-duration: 3.75s;
+    animation-name: bounce5;
+    animation-timing-function: cubic-bezier(5,0.25,5,0.25);
+ 
+    
+
+}
+
+     @keyframes bounce5 {
+    0%, 100%{
+        top:0%;
+    }
+    25%, 75% {
+        top: 25%;
+    }
+    75%{
+        top:50%;
+    }
+    90%{
+        top:99%;
+    }
+  }
+
+  #box-6 {
+  background-color: #FF00FF;
+    animation-duration: 2s;
+    animation-name: bounce6;
+    animation-timing-function: cubic-bezier(5,1,5,2);
+ 
+    
+
+}
+
+     @keyframes bounce6 {
+    0%, 100%{
+        top:0%;
+        background-color: #FF00FF;
+    }
+    20%,  {
+        top: 25%;
+        background-color: #000000;
+    }
+    40%{
+        top:50%;
+        background-color: #000000;
+    }
+
+    60%{
+        top:100%;
+        background-color: #FF00FF;
+    }
+    /**80% {
+        top:0%;
+            }**/
+    90%{
+        top:-20%;
+        background-color: #FF00FF;
+    }
+  }
+
+  #music1 {
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    position: absolute;
+    
+
+  }
+
 
 </style>
 
-<div id="box-container">
+<div id="box-container"><h1>My Big Bouncy Balls - by Sophia</h1> 
+
+
     <div class="box" id="box-1"></div>
     <div class="box" id="box-2"></div>
     <div class="box" id="box-3"></div>
+    <div class="box" id="box-4"></div>
+    <div class="box" id="box-5"></div>
+    <div class="box" id="box-6"></div>
+    <p><audio id="music1" controls><source src="https://upload.wikimedia.org/wikipedia/commons/1/13/Dance_of_the_Sugar_Plum_Fairies_%28ISRC_USUAN1100270%29.mp3" type="audio/mpeg">Your browser does not support this.</source></audio></p>
+
 </div>
+
 
 
 
