@@ -1,0 +1,172 @@
+	<!DOCTYPE html>
+	<html lang="en">
+			<style>
+
+
+
+				body{
+					margin: 0px;
+				}
+		/*	#nav-bar{
+				position:absolute;
+				position:top;
+			}
+*/
+
+			.body {
+				height: 1000px;
+				background-color: #6C5B7B;
+				padding: 20px auto;
+				position: relative;
+				margin-top: 240px;
+				padding: 1em; /*always have padding in your content*/
+			}
+
+			p {
+
+			}
+
+
+			.nav-link{
+				display: inline-block;
+
+				position: sticky;
+				border: solid;
+				border-color: #355c7D;
+				padding: 10px;
+				
+				
+				width: 15% ;
+				text-align: center;
+
+				
+				font-size: 2em;
+
+
+			}
+
+			.link_container{
+				min-width:100%;
+			}
+
+	
+
+			#header, #nav-bar {
+				min-height: 240px;
+				width: 100%;
+				background-color: #Ff5242;
+				position: fixed;
+				display: 	flex;
+				font-family: Lucida console, sans-serif;
+				top: 0;
+				z-index: 999; /*this is the code to make html prioritise*/
+
+				
+
+
+				
+			}
+
+				@media	(min-width:800px){
+					h1: 1em;
+					}
+
+			h1 {
+				font-size: 4em;
+
+
+			}
+
+
+			#video{
+				
+				position: relative;
+
+			}
+
+			#email {
+
+			}
+
+			#form{
+
+			}
+
+			#submit{
+
+			}
+
+			</style>
+
+			<html>
+			<head>	
+				<title>Pants Weekly</title>
+			</head>
+					
+					
+			<body>	
+
+
+
+
+
+				
+
+					<header id="header">
+						<nav id="nav-bar" >
+								<img  src="https://github.com/bbbananabox/Repo-Man/blob/master/pants-weekly-logo.png?raw=true" width="197px" height="223px" id="header-img" alt="img link broken" >		
+								<div class="link_container">
+								
+									<h1>PANTS WEEKLY</h1>
+								
+
+									
+									<a class="nav-link" href="#HOME">HOME</a>
+									<a class="nav-link" href="#PRODUCTS">PRODUCTS</a>
+									<a class="nav-link" href="#MEDIA">MEDIA</a>
+									
+								</div>
+						</nav>
+					</header>
+
+					<div class="body">	
+
+
+
+						<h2 id="HOME">WELCOME<!/h2>
+						<p>Welcome to this website about the love of pants. 
+							<br>
+							<br>
+							If you love pants then you have come to the right place. 
+							<br>
+							<br>
+							Check out this video about pants, below:</p>
+						
+						<h2 id="PRODUCTS">PRODUCTS</h2>
+						<p>Some initial text about products here.</p>
+
+
+						<h2 id="MEDIA">MEDIA</h2>
+						<!-- <video id="video" src="https://www.youtube.com/embed/Nv7Ts4v5_Bs" controls width="560" height="auto" type="video/mpeg" allowfullscreen alt="this video is not supported"> 		</video>
+ -->
+						<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Nv7Ts4v5_Bs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>					
+							<br>
+							<br>	
+					<form id="form" method="GET" action="https://www.freecodecamp.com/email-submit/" name="form">
+						<label for id="form">Sign up for more information</label>
+						
+						<label for="email"></label>
+						<input name="email" id="email" type="email" value="email" placeholder="email" required="true"></input>
+
+						<input type="submit" id="submit" value="Submit"></input>
+						
+						
+					</form>
+
+
+					</div>
+			</body>	
+
+
+
+			</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+	<html lang="en">
+			<style>
+
+
+
+				body{
+					margin: 0px;
+				}
+
+				#navbar{
+					position: fixed;
+					left: 0px;
+					top:0px;
+					width: 250px;
+					height: 100%;
+					border: 0px;
+					background-color: #45ADA8;
+					display: block;
+					padding: 30px;
+					color: #000000;
+					font-family: American Typewriter, Courier;
+					margin: 0px;
+					z-index: 999;
+				}
+
+				.main-section {
+					/*5 minimum elements*/
+		
+
+				}
+
+				#main-doc {
+					position: static;
+					display: block;
+					left: 0px; 
+					
+					height: 100%;
+					background-color: #E5FCC2;
+					
+					padding: 30px;
+					margin: 0px 0px 0px 300px;
+					font-color: #E5FCC2;
+					font-family: American Typewriter, Courier;
+
+				}
+
+				#main-section {
+
+				}
+
+				.nav-link{
+
+				}
+
+				code {
+					word-break: normal;
+					word-wrap: normal;
+					background-color: Gray;
+					color: #FFFFFF;
+					padding: 5px;
+					margin: 10px;
+					white-space: pre;
+					display: block;
+					text-align: left;
+					position: relative;
+				}
+
+				header {
+					font-weight: bold;
+					font-size: 1.5em;
+				}
+
+				@media (max-width:400px) {
+					
+					#navbar, #main-doc{
+						width: 100%;
+						margin: 0px;
+						position: relative;
+						padding: 10px;
+						margin: 0px;
+					}
+					
+				}
+
+			</style>
+
+	<html>
+
+
+		<body>
+		<nav id="navbar">
+			<header>SOPHIA Coding course</header>
+
+			<p ><a class="nav-link" href="#INTRODUCTION" target="_top">INTRODUCTION </a></p>
+
+			<p><a class="nav-link" href="#WHAT_YOU_WILL_NEED" target="_top">WHAT_YOU_WILL_NEED	</a></p>
+
+			<p><a class="nav-link" href="#CURRICULUM" target="_top">CURRICULUM	</a></p>
+
+			<p><a class="nav-link" href="#HOW_TO_APPLY" target="_top">HOW_TO_APPLY	</a></p>
+
+			<p><a class="nav-link" href="#CONTACT" target="_top">CONTACT</a>	</p>
+		</nav>
+
+		
+
+
+		<main id="main-doc">
+			
+
+			<section class="main-section" id="INTRODUCTION">
+				<header >INTRODUCTION</header>
+				<p>Welcome to the Freecodecamp Tech spec page of our html and CSS course.</p>
+				<p>Some of the aspects you will learn in this course is as follows:</p>
+
+				<ul>
+					<li>Basic html</li>
+					<li>Basic css</li>
+					<li>Accessibility</li>
+					<li>Design</li>
+					<li>Challenges</li>
+				</ul>
+
+				<p>blah blah</p>
+
+
+			</section>
+			<section  class="main-section" id="WHAT_YOU_WILL_NEED">
+				<header >WHAT_YOU_WILL_NEED</header>
+				<p>You will need access to internet and a laptop (doesn't matter if it is windows or apple).</p>
+				<p>You will not need any stationery to note anything down.</p>
+				<p>You will need to sign up for an account of <a href="https://codepen.io" target="_blank">codepen</a> which you will use to test your code during the challenges. </p>
+			</section>
+
+			<section  class="main-section" id="CURRICULUM">
+				<header >CURRICULUM</header>
+				<p>Basic html, e.g.</p>
+				
+					<code> a href="example" </code>
+				
+				<p>Basic css, e.g. </p>
+
+					<code> position: sticky; </code>
+
+					<code> margin: 0px; </code>
+
+					<code> padding: 30px; </code>
+
+				<p>Accessibility, e.g. </p>
+					<code> alt="This picture cannot display here"</code>
+
+				<p>Design, e.g. coding for colours and complimentary colour theory</p>
+
+					<code> background-color: #FFFFFF; </code>
+				<p>Challenges</p>
+			</section>
+
+
+			<section  class="main-section" id="HOW_TO_APPLY">
+				<header >HOW_TO_APPLY</header>
+				<p>To apply, please contact us via the contact form below. </p>
+			</section>
+
+
+			<section  class="main-section" id="CONTACT">
+				<header >CONTACT</header>
+				<p>Blah blah</p>
+				<form action="/form-send.php" method="get" id="Sophia-coding-form">
+					<input type="text" id="name" name="name" placeholder="name"></input><input type="text" id="email" name="email" placeholder="email" required></input> <button type="submit" >Submit</button>
+
+				<p>If you have any further questions, please email Sophia at sophia@somesortofcodingcourse.com</p>
+			</section>
+
+
+		</main>
+		</body>
+
+
+	</html>
